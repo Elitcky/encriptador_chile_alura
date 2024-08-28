@@ -1,0 +1,228 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    max-width: 1200px;
+    border: 2px solid #003366;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+    box-sizing: border-box;
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    color: #ce0c0c;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh; 
+}
+
+.container_total {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%;
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border: 1px solid #262626;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 0 20px; 
+    flex-direction: column;
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.container_derecha {
+    flex: 0 0 400px;
+    height: 944px;
+    margin-top: 40px;
+    background-color: #e0e0e0;
+    border: 2px solid #00468d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.encryptor-box {
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.encryptor-box h1 {
+    font-size: 1.5rem;
+    color: #095bac;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#encrypt-btn {
+    background-color: #0d5aa6;
+    color: #ffffff;
+}
+
+#decrypt-btn {
+    background-color: #cccccc;
+    color: #333333;
+}
+
+.info {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+.output-box {
+    width: 400px;
+    height: 944px; 
+    padding: 20px;
+    background-color: #e5e5e5;
+    border: 0px solid #075aac;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+#output-message {
+    font-size: 1.2rem;
+    color: #333333;
+    text-align: center;
+}
+
+.illustration img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+#copy-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0461bd;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#copy-btn.hidden {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0d74da;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+}
+
+/* Media queries para pantallas menores a 1200px */
+@media (max-width: 1200px) {
+    .container_total {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 100%; 
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .container_derecha {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .output-box {
+        width: 100%;
+        height: auto;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

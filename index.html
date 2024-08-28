@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto para Alura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="bandera_chile.jpg" alt="Icono Encriptador" class="header-icon">
+        <h1 class="header-title">Encriptador Chile</h1>
+    </header>
+    <div class="container_total">
+        <div class="container">
+            <div class="container_titulo">
+                <h1>Este es un ejercicio para Alura Latam</h1>
+            </div>
+            <div class="encryptor-box">
+                <h1>Ingrese el texto aquí</h1>
+                <textarea id="text-input" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                <div class="button-group">
+                    <button id="encrypt-btn">Encriptar</button>
+                    <button id="decrypt-btn">Desencriptar</button>
+                </div>
+                <p class="info">Solo letras minúsculas y sin acentos</p>
+            </div>
+        </div>
+        <div class="container_derecha">
+            <div class="output-box">
+                <div id="output-message">Ningún mensaje fue encontrado
+                    <div class="illustration">
+                        <img src="no-encontrado.png" alt="Icono de una bandera chilena">
+                    </div>
+                </div>
+                <button id="copy-btn" class="hidden">Copiar mensaje</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        Ejercicio para Alura - SebastianC 2024
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
